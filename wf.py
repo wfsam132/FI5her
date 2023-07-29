@@ -81,11 +81,6 @@ for brayen in range(10000):
     u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G610M Build/PKQ1.{str(rr(111111,210000))}.018; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; CPH2109 Build/RKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     u5 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-J120H Build/PKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    u6 =f""
-    u7 =f" "
-    u8 =f""
-    u9 =f""
-    u10 =f""
     UaMainn = random.choice([u1, u2, u3, u4, u5])
     ugen.append(UaMainn)
  
@@ -166,12 +161,11 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	cetak(panel(f"""
-[bold green]               ██╗            ██╗███████╗██╗  ██╗
-[bold red]                    ██║            ██║██╔════╝██║ ██╔╝
-[bold yellow]              ██║   █╗   ██║█████╗.     █████╔╝ 
-[bold green]               ██║███╗██║██╔══╝      ██╔═██╗ 
-[bold red]                    ╚███╔███╔╝██║               ██║    ██╗
-[bold yellow]              ╚══╝╚══╝.  ╚═╝               ╚═╝   ╚═╝
+[bold green]         __________________  ____________ 
+[bold green]        / ____/  _/ ____/ / / / ____/ __ \
+[bold green]       / /_   / //___ \/ /_/ / __/ / /_/ /
+[bold green]     / __/ _/ /____/ / __  / /___/ _, _/ 
+[bold green]    /_/   /___/_____/_/ /_/_____/_/ |_|  
          """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login123():
