@@ -163,7 +163,7 @@ def banner():
 	cetak(panel(f"""
 [bold green]         __________________  ____________ 
 [bold green]        / ____/  _/ ____/ / / / ____/ __ \
-[bold green]       / /_   / //___ \/ /_/ / __/ / /_/ /
+[bold green]      / /_   / //___ \/ /_/ / __/ / /_/ /
 [bold green]     / __/ _/ /____/ / __  / /___/ _, _/ 
 [bold green]    /_/   /___/_____/_/ /_/_____/_/ |_|  
          """,width=90,padding=(0,8),title=f"Banner",style=f"bold white"))
@@ -528,20 +528,20 @@ def crack_email():
 	setting()	
 #-----------------[ CRACK FILE ]-----------------#
 def crack_file():
-	try:vin = os.listdir('/sdcard/DUMP-FILE/')
+	try:vin = os.listdir('/sdcard/FI5HER/DUMP-FILE/')
 	except FileNotFoundError:
-		print(' [+] File Tidak Ditemukan ')
+		print(' [+] File Not Found ')
 		time.sleep(2)
 		back()
 	if len(vin)==0:
-		print(' [+] Kamu Tidak Memiliki File Dump ')
+		print(' [+] You Don't Have a Dump File ')
 		time.sleep(2)
 		back()
 	else:
 		cih = 0
 		lol = {}
 		for isi in vin:
-			try:hem = open('/sdcard/DUMP-FILE/'+isi,'r').readlines()
+			try:hem = open('/sdcard/FI5HER/DUMP-FILE/'+isi,'r').readlines()
 			except:continue
 			cih+=1
 			if cih<100:
@@ -559,9 +559,9 @@ def crack_file():
 			print(f' [+] Pilih Yang Bener Kontol {x}')
 			time.sleep(3)
 			back()
-		try:lin = open('/sdcard/DUMP-FILE/'+geh,'r').read().splitlines()
+		try:lin = open('/sdcard/FI5HER/DUMP-FILE/'+geh,'r').read().splitlines()
 		except:
-			print(' [+] File Tidak Ditemukan, Coba Lagi Nanti ')
+			print(' [+] File Not Found, Try Again Later ')
 			time.sleep(2)
 			back()
 		for xid in lin:
