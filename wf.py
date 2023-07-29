@@ -1208,7 +1208,7 @@ def reguler2(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	prog.update(des,description=f"{h}Mbasic{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"{h}Mbasic{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold red]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1245,8 +1245,8 @@ def reguler2(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1254,8 +1254,8 @@ def reguler2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1296,7 +1296,7 @@ def reguler3(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	prog.update(des,description=f"{h}Free{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"{h}Free{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold red]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1333,8 +1333,8 @@ def reguler3(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1342,8 +1342,8 @@ def reguler3(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1385,7 +1385,7 @@ def kontol(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	prog.update(des,description=f"{h}Async{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"{h}Async{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold red]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1422,8 +1422,8 @@ def kontol(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1431,8 +1431,8 @@ def kontol(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1474,7 +1474,7 @@ def bapi(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	prog.update(des,description=f"{h}M-ALPHA{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"{h}M-ALPHA{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold red]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1511,8 +1511,8 @@ def bapi(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1520,8 +1520,8 @@ def bapi(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1563,7 +1563,7 @@ def colmek1(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold red]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1581,8 +1581,8 @@ def colmek1(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1590,8 +1590,8 @@ def colmek1(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1633,7 +1633,7 @@ def colmek2(idf,pwv):
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
 	ses = requests.Session()
-	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"{h}Mobile{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold red]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1651,8 +1651,8 @@ def colmek2(idf,pwv):
 				if 'no' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
@@ -1660,8 +1660,8 @@ def colmek2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold yellow]{idf}|{pw}")
-					tree.add(f"[bold yellow]{ua}")
+					tree.add(f"[bold red]{idf}|{pw}")
+					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
