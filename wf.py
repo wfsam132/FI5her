@@ -1254,7 +1254,7 @@ def reguler2(idf,pwv):
 				elif 'ya' in gabriel:
 					cp+=1
 					tree = Tree(f" ")
-					tree.add(f"[bold red]idf}|{pw}")
+					tree.add(f"[bold red]{idf}|{pw}")
 					tree.add(f"[bold red]{ua}")
 					cetak(tree) 
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
