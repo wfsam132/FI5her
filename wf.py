@@ -81,7 +81,16 @@ for brayen in range(10000):
     u3 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G610M Build/PKQ1.{str(rr(111111,210000))}.018; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     u4 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; CPH2109 Build/RKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
     u5 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-J120H Build/PKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
-    UaMainn = random.choice([u1, u2, u3, u4, u5])
+    u6 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-J120H Build/PKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u7 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-J120H Build/PKQ1.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u8 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; vivo Y51 Build/LRX22G.{str(rr(111111,210000))}.001; wv) Samsung GT-i9100 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u9 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G928XBuild/LMY47X.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36"
+    u10 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G892A Build/NRD90M.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} MobileSafari/537.36Samsung Galaxy S7"
+    u11 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G930VCBuild/NRD90M.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36Samsung Galaxy S7 Edge"
+    u12 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G935SBuild/MMB29K.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36Samsung Galaxy S6"
+    u13 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G935SBuild/MMB29K.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36Samsung Galaxy S6 Edge Plus"
+    u14 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G928XBuild/LMY47X.{str(rr(111111,210000))}.023; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} MobileSafari/537.36Nexus 6P"
+	UaMainn = random.choice([u1, u2, u3, u4, u5,u6,u7,u8,u9,u10,u11,u12,u13,u14])
     ugen.append(UaMainn)
  
 for x in range(10):
@@ -2076,9 +2085,15 @@ agent = random.choice(
 			"Mozilla/5.0 (Linux; Android 5.0; SM-G900F Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/2.1 Chrome/34.0.1847.76 Mobile Safari/537.36",
 			"Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
 			"Dalvik/1.6.0 (Linux; U; Android 4.1.1; BroadSign Xpress 1.0.14 B- (720) Build/JRO03H)",
-			"Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; BroadSign Xpress 1.0.15-6 B- (720) Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30","Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36",
-			"Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36"
-			"Mozilla/5.0 (Linux; Android 10; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36"
+			"Mozilla/5.0 (Linux; U; Android 4.1.1; en-us; BroadSign Xpress 1.0.15-6 B- (720) Build/JRO03H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30",
+			"Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 10; SM-A305F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36",
+			"Mozilla/5.0 (Linux; Android 7.0; SM-G892A Build/NRD90M;wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.107 MobileSafari/537.36Samsung Galaxy S7",
+			"Mozilla/5.0 (Linux; Android 7.0; SM-G930VCBuild/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0Chrome/58.0.3029.83 Mobile Safari/537.36Samsung Galaxy S7 Edge",
+			"Mozilla/5.0 (Linux; Android 6.0.1; SM-G935SBuild/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0Chrome/55.0.2883.91 Mobile Safari/537.36Samsung Galaxy S6",
+			"Mozilla/5.0 (Linux; Android 6.0.1; SM-G935SBuild/MMB29K; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0Chrome/55.0.2883.91 Mobile Safari/537.36Samsung Galaxy S6 Edge Plus",
+			"Mozilla/5.0 (Linux; Android 5.1.1; SM-G928XBuild/LMY47X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 MobileSafari/537.36Nexus 6P"
 	]
 )
 
