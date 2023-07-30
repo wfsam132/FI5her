@@ -90,7 +90,7 @@ for brayen in range(10000):
     u12 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G935SBuild/MMB29K.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36Samsung Galaxy S6"
     u13 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G935SBuild/MMB29K.{str(rr(111111,210000))}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} Mobile Safari/537.36Samsung Galaxy S6 Edge Plus"
     u14 = f"Mozilla/5.0 (Linux; Android {str(rr(4,12))}; SM-G928XBuild/LMY47X.{str(rr(111111,210000))}.023; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{str(rr(73,150))}.0.{str(rr(5500,5900))}.{str(rr(75,150))} MobileSafari/537.36Nexus 6P"
-	UaMainn = random.choice([u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14])
+UaMainn = random.choice([u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14])
     ugen.append(UaMainn)
  
 for x in range(10):
