@@ -832,28 +832,28 @@ def setting():
 	else:
 		pwpluss.append('no')
 	
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Aplikasi Yang Terkait Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
-	_brayen_ = input(' [+] Pilih : ')
+	cetak(panel(f'      [bold white]Do you want to display related applications in the account?  Y/N',width=90,title=f"[bold green]Setting Cek Apk",style=f"bold white"))
+	_brayen_ = input(' [+] Select : ')
 	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' [+] Select the right option  ')
 		back()
 	elif _brayen_ in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
 		
-	cetak(panel(f'      [bold white]Apakah Anda Ingin Menampilkan Opsi Checkpoint Di Dalam Akun ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
-	_brayen_ = input(' [+] Pilih : ')
+	cetak(panel(f'      [bold white]Do you want to display checkpoint option in account ? Y/T',width=90,title=f"[bold green]Cek Opsi",style=f"bold white"))
+	_brayen_ = input(' [+] Select : ')
 	if _brayen_ in ['']:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' [+] Select the right option ')
 		back()
 	elif _brayen_ in ['y','Y']:
 		gabriel.append('ya')
 	else:
 		gabriel.append('no')
 	
-	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
-	uatambah = input(f' [+] Pilih : ')
+	cetak(panel(f'[bold white]Do you want to use a manual user-agent to crack an account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	uatambah = input(f' [+] Select : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
 		bzer = input(f' [+] Masukan User-Agent : ')
