@@ -559,23 +559,23 @@ def crack_email():
 		sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
 		time.sleep(0.0000003)
 	print("\r")
-	setting()	
+	setting()
 #-----------------[ CRACK FILE ]-----------------#
 def crack_file():
-	try:vin = os.listdir('/sdcard/DUMP-FILE/')
+	try:vin = os.listdir('/sdcard/FI5HER/')
 	except FileNotFoundError:
-		print(' [+] File Tidak Ditemukan ')
+		print(' [+] File Not Found ')
 		time.sleep(2)
 		back()
 	if len(vin)==0:
-		print(' [+] Kamu Tidak Memiliki File Dump ')
+		print(' [+] You Do not Have a Dump File ')
 		time.sleep(2)
 		back()
 	else:
 		cih = 0
 		lol = {}
 		for isi in vin:
-			try:hem = open('/sdcard/DUMP-FILE/'+isi,'r').readlines()
+			try:hem = open('/sdcard/FI5HER/'+isi,'r').readlines()
 			except:continue
 			cih+=1
 			if cih<100:
@@ -590,12 +590,12 @@ def crack_file():
 		geeh = input(' [+] Pilih : ')
 		try:geh = lol[geeh]
 		except KeyError:
-			print(f' [+] Pilih Yang Bener Kontol {x}')
+			print(f' [+] Select the right one {x}')
 			time.sleep(3)
 			back()
-		try:lin = open('/sdcard/DUMP-FILE/'+geh,'r').read().splitlines()
+		try:lin = open('/sdcard/FI5HER/'+geh,'r').read().splitlines()
 		except:
-			print(' [+] File Tidak Ditemukan, Coba Lagi Nanti ')
+			print(' [+] File Not Found, Try Again Later')
 			time.sleep(2)
 			back()
 		for xid in lin:
