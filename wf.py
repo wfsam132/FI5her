@@ -27,12 +27,12 @@ from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
 try:
         import rich
 except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Rich •'))
+        cetak(nel('\t• Currently Installing Rich Module •'))
         os.system('pip install rich')
 try:
         import stdiomask
 except ImportError:
-        cetak(nel('\t• Sedang Menginstall Modul Stdiomask •'))
+        cetak(nel('\t• Currently Installing Stdiomask Module •'))
         os.system('pip install stdiomask')
 try:
 	import requests
