@@ -48,7 +48,7 @@ gabriel=[]
 console = Console()
 ses=requests.Session()
 id,id2,loop,ok,cp,akun,oprek,lisensiku,tokenku,uid,lisensikuni,method,pwpluss,pwnya= [],[],0,0,0,[],[],[],[],[],[],[],[],[]
-ugen2,ugen,dia,cokbrut,dump,memek,ualu,ualuh,lisensikuni,lisensiku,princp=[],[],[],[],[],[],[],[],[],[],[]
+ugen,ugen2,he,cokbrut,dump,pussy,ugen,ugen,ancient license,license,principle=[],[],[],[],[],[],[],[],[],[],[]
 sys.stdout.write('\x1b]2; Fi5her Multi Brute Facebook\x07')
 #------------------[ USER-AGENT ]-------------------#
 try:
