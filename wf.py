@@ -719,7 +719,7 @@ def brayen_dump():
 	except (KeyError,IOError):
 		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
 		exit()
-#-------------------[ CRACK-PUBLIK ]----------------#
+#-------------------[ CRACK-PUBLIC ]----------------#
 def dump_massal():
 	try:
 		token = open('.token.txt','r').read()
@@ -791,10 +791,10 @@ def setting():
 		print(' [+] Pilih Yang Bener Kontooll ')
 		exit()
 	urut = []
-	urut.append(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=42,title=f"[bold green]Validate",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]04[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=42,title=f"[bold green]Reguler",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]07[/][bold white]][/] [bold white]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site [bold green]m.alpha.facebook.com[bold white] ',width=42,title=f"[bold green]Alpha And Async",style=f"bold white"))
-	urut.append(panel(f'[bold white][[bold cyan]09[/][bold white]][/] [bold white]Login Site [bold green]x.facebook.com[bold white] [/]\n[bold white][[bold cyan]10[/][bold white]][/] [bold white]Login Site [bold green]d.facebook.com[bold white] ',width=42,title=f"[bold green]Old Metode",style=f"bold white"))
+	urut.append(panel(f'[bold blue][[bold cyan]01[/][bold blue]][/] [bold blue]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=42,title=f"[bold green]Validate",style=f"bold white"))
+	urut.append(panel(f'[bold blue][[bold cyan]04[/][bold blue]][/] [bold blue]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]05[/][bold white]][/] [bold white]Login Site [bold green]mbasic.facebook.com[bold white] [/]\n[bold white][[bold cyan]06[/][bold white]][/] [bold white]Login Site [bold green]free.facebook.com[bold white] ',width=42,title=f"[bold green]Reguler",style=f"bold white"))
+	urut.append(panel(f'[bold blue][[bold cyan]07[/][bold blue]][/] [bold blue]Login Site [bold green]m.facebook.com[bold white] [/]\n[bold white][[bold cyan]08[/][bold white]][/] [bold white]Login Site [bold green]m.alpha.facebook.com[bold white] ',width=42,title=f"[bold green]Alpha And Async",style=f"bold white"))
+	urut.append(panel(f'[bold blue][[bold cyan]09[/][bold blue]][/] [bold blue]Login Site [bold green]x.facebook.com[bold white] [/]\n[bold white][[bold cyan]10[/][bold white]][/] [bold white]Login Site [bold green]d.facebook.com[bold white] ',width=42,title=f"[bold green]Old Metode",style=f"bold white"))
 	console.print(Columns(urut))
 	hc = input(f' [+] Pilih Metode : ')
 	if hc in ['1','01']:
