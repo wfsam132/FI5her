@@ -717,7 +717,7 @@ def brayen_dump():
 		print(' [+] Internet Lu Gak Ada Anjing')
 		exit()
 	except (KeyError,IOError):
-		print(' [+] Pertemanan Tidak Publick Atau Cookie And Token Anda Busuk')
+		print(' [+] Friends Not Public Or Your Cookie And Token Expired')
 		exit()
 #-------------------[ CRACK-PUBLIC ]----------------#
 def dump_massal():
