@@ -188,7 +188,7 @@ def banner():
 def login123():
 	os.system('clear')
 	banner()
-	cetak(panel(f"[[bold cyan]01[bold white]] Login With Cookie              [[bold cyan]03[bold white]] How to get cookies \n[[bold cyan]02[bold white]] Menu Crack Without Login                [[bold cyan]04[bold white]] Check Crack Results",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
+	cetak(panel(f"[[bold cyan]01[bold blue]] Login With Cookie	[[bold cyan]03[bold blue]] How to get cookies \n[[bold cyan]02[bold blue]] Menu Crack Without Login	[[bold cyan]04[bold blue]] Check Crack Results",width=90,title=f"[bold green]Menu Bot",padding=(0,2),style=f"bold white"))
 	bryn = input(f' [+] Select Menu : ')
 	if bryn in ['1','01']:
 		login_lagi334()
@@ -227,7 +227,7 @@ def login():
 		
 def login_lagi334():
 	try:
-		cetak(nel('It is recommended to use cookies that are still fresh to crack accounts',width=90,style=f"bold white"))
+		cetak(nel('It is recommended to use cookies that are still fresh to crack accounts',width=90,style=f"bold blue"))
 		your_cookies = input(' [+] Enter Cookie : ')
 		with requests.Session() as r:
 			try:
@@ -300,7 +300,7 @@ def followdong():
 				x=requests.get('https://mbasic.facebook.com'+foll['href'],cookies = {'cookie':cokies}).text
 				exit()
 	except(Exception)as e:print(e)#< Response error
-#------------------[ BAGIAN-MENU ]----------------#
+#------------------[ SELECT MENU ]----------------#
 def menu(my_name,my_id):
 	try:
 		token = open('.token.txt','r').read()
@@ -313,8 +313,8 @@ def menu(my_name,my_id):
 	banner()
 	negara = requests.get("http://ip-api.com/json/").json()["country"]
 	ip = requests.get("http://ip-api.com/json/").json()["query"]
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{waktu}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.2[/][/] ',width=43,padding=(0,3),style=f"bold white"))
-	dia.append(panel(f'[bold white][+[/][bold white]][/] [bold white]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{asal_kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{asal_reg}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
+	dia.append(panel(f'[bold blue][+[/][bold white]][/] [bold blue]Username : [bold green]{my_name}[/]\n[bold white][+[/][bold white]][/] [bold white]User Idz : [bold green]{my_id}[/]\n[bold white][+[/][bold white]][/] [bold white]Tanggal  : [bold green]{waktu}[/][/]\n[bold white][+[/][bold white]][/] [bold white]Status   : [bold green]Premium[/][/]\n[bold white][+[/][bold white]][/] [bold white]Versi Sc : [bold green]Update 3.2[/][/] ',width=43,padding=(0,3),style=f"bold white"))
+	dia.append(panel(f'[bold blue][+[/][bold white]][/] [bold blue]Country  : [bold green]{negara}[/]\n[bold white][+[/][bold white]][/] [bold white]City     : [bold green]{asal_kota}[/]\n[bold white][+[/][bold white]][/] [bold white]Region   : [bold green]{asal_reg}[/][/]\n[bold white][+[/][bold white]][/] [bold white]TimeZone : [bold green]{times}[/][/]\n[bold white][+[/][bold white]][/] [bold white]My Ip    : [bold green]{ip}[/][/] ',width=43,padding=(0,3),style=f"bold white"))
 	console.print(Columns(dia))
 	cetak(panel(f"[bold white]Alvino_Xy , DerrXr , Asepit-Gans , Rozhak XD , Dapunta , Nazri XD And AOREC XD",width=90,title=f"[bold green]Thanks To",padding=(0,5),style=f"bold white"))
 	cetak(panel(f"[bold white][[bold cyan]01[bold white]] Crack From Friends     [bold white][[bold cyan]06[bold white]] Crack From Username[bold white]      [[bold cyan]11[bold white]] Get Headers      \n[bold white][[bold cyan]02[bold white]] Crack From Massal      [bold white][[bold cyan]07[bold white]] Crack From Followers     [[bold cyan]12[bold white]] Spam WhatsApp      \n[bold white][[bold cyan]03[bold white]] Crack From Groups      [[bold cyan]08[bold white]] Crack From Comment       [bold white][[bold cyan]13[bold white]] Spam Sms \n[bold white][[bold cyan]04[bold white]] Crack From Email       [bold white][[bold cyan]09[bold white]] Check Opsi Checkpoint [bold white]   [[bold cyan]14[bold white]] Track Ip \n[bold white][[bold cyan]05[bold white]] Crack From Files       [bold white][[bold cyan]10[bold white]] [bold white]Check Result Crack [bold white]      [[bold cyan]15[bold white]] [bold red]Delete Cookies",width=90,title=f"[bold green]List Menu",style=f"bold white"))
@@ -418,7 +418,7 @@ def lacakip():
 		print(" [+] Link Google Maps :", google_maps_url)
 	else:
 		print(" [+] Incorrect IP Address Entered")
-#-----------------[ CRACK GRUP ]-----------------# 
+#-----------------[ CRACK GROUP ]-----------------# 
 def crack_group():
 	cetak(nel(' Enter Idz Group Make sure the group is public not private',width=90,padding=(0,8),style=f"bold white"))
 	link = input(f' [+] Id Group : ')
