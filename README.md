@@ -1,6 +1,5 @@
 # FI5her
 
-
 pkg update && pkg upgrade
 pkg install git
 pkg install python 
@@ -12,4 +11,3 @@ https://github.com/wfsam132/FI5her
 cd FI5her
 git pull
 python wf.py
-
